@@ -81,6 +81,10 @@ a:hover {
   display: none;
 }
 
+.count-size {
+  font-size: 9rem;
+}
+
 #result {
   position: fixed;
   top: 50%;
@@ -230,6 +234,10 @@ button {
 .wheat {
   color: wheat !important;
 
+}
+
+.lime {
+  color: lime !important;
 }
 
 /* responsive */

@@ -26,7 +26,14 @@ const typeController = (e) => {
   // Handle backspace press
   if (newLetter == "Backspace") {
     userText = userText.slice(0, userText.length - 1);
-    return display.removeChild(display.lastChild);
+
+    if (display.children[0]) {
+      return display.removeChild(display.lastChild)
+    }
+
+    else {
+      return;
+    }
   }
 
   // these are the valid character we are allowing to type
@@ -106,7 +113,7 @@ const closeModal = () => {
   resultModal.classList.toggle("hidden");
 
   // reload
-  window.location.reload();
+  // window.location.reload();
 
 };
 
@@ -119,14 +126,17 @@ const start = () => {
   countdownOverlay.style.color = 'yellow';
 
   const startCountdown = setInterval(() => {
-    countdownOverlay.innerHTML = `<h1>${count}</h1>`;
+    countdownOverlay.innerHTML = `<h1 class="count-size">${count}</h1>`;
 
     // finished timer
-    if (count == 0) {
+    // if (count == 0) 
+    if (count < 0) {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "none";
       display.classList.remove("inactive");
+
+      countdownOverlay.innerHTML = '';
 
       clearInterval(startCountdown);
       startTime = new Date().getTime();
@@ -150,7 +160,7 @@ setInterval(() => {
 
   // console.log(timeSpent);
 
-  document.getElementById("show-time").classList.add('fw-bolder', 'fs-4');
+  document.getElementById("show-time").classList.add('fw-bolder', 'fs-1');
   document.getElementById("show-time").style.color = 'lime';
   // console.log(timeSpent);
 
