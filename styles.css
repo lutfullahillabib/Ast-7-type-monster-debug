@@ -22,6 +22,7 @@ a:hover {
   /* text-justify: inter-word; */
 }
 
+
 .box-container {
   width: 70%;
   margin: 20px auto;
@@ -44,6 +45,7 @@ a:hover {
 
   text-align: center;
   padding: 15px;
+  color: wheat;
 }
 
 #display {
@@ -102,6 +104,7 @@ a:hover {
 
 .green {
   color: rgb(25, 247, 25);
+
 }
 
 .red {
@@ -213,6 +216,20 @@ button {
   width: 100%;
   position: fixed;
   top: 0;
+}
+
+.accordion {
+  --bs-accordion-bg: translate;
+}
+
+.accordion-button:not(.collapsed) {
+  color: wheat !important;
+  background-color: transparent !important;
+}
+
+.wheat {
+  color: wheat !important;
+
 }
 
 /* responsive */

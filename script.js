@@ -86,7 +86,7 @@ const gameOver = () => {
   display.classList.add("inactive");
   // show result
   resultModal.innerHTML += `
-    <h1>Finished!</h1>
+    <h1 class='wheat'>Finished!</h1>
     <p>You took: <span class="bold text-warning">${timeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
     <button onclick="closeModal()">Close</button>
@@ -116,6 +116,7 @@ const start = () => {
 
   let count = 3;
   countdownOverlay.style.display = "flex";
+  countdownOverlay.style.color = 'yellow';
 
   const startCountdown = setInterval(() => {
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
@@ -149,5 +150,9 @@ setInterval(() => {
 
   // console.log(timeSpent);
 
-  document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
+  document.getElementById("show-time").classList.add('fw-bolder', 'fs-4');
+  document.getElementById("show-time").style.color = 'lime';
+  // console.log(timeSpent);
+
+  document.getElementById("show-time").innerText = `${startTime ? timeSpent : 0}`;
 }, 1000);
