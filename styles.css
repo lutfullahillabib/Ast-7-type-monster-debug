@@ -11,6 +11,17 @@ body {
   font-family: "Zilla Slab", serif;
 }
 
+a:hover {
+  text-decoration: underline;
+  font-weight: 700 !important;
+  color: rgb(25, 247, 25) !important;
+}
+
+.justify {
+  text-align: justify;
+  /* text-justify: inter-word; */
+}
+
 .box-container {
   width: 70%;
   margin: 20px auto;
@@ -41,7 +52,7 @@ body {
   color: white;
   font-size: 32px;
   background-color: #171717;
-  border: 2px solid #9dffad;
+  border: 2px solid rgb(25, 247, 25);
   border-radius: 15px;
   cursor: pointer;
   text-align: center;
@@ -71,7 +82,7 @@ body {
   width: 400px;
   background-color: #171717;
   border-radius: 15px;
-  border: 2px solid #9dffad;
+  border: 2px solid rgb(25, 247, 25);
   color: white;
   text-align: center;
   padding: 2rem;
@@ -84,11 +95,11 @@ body {
 }
 
 .green {
-  color: #9dffad;
+  color: rgb(25, 247, 25);
 }
 
 .red {
-  color: #eb6565;
+  color: #fd0000;
 }
 
 .bold {
@@ -135,6 +146,11 @@ body {
   margin: 30px 0;
 }
 
+button:hover {
+  background-color: rgb(25, 247, 25);
+  color: black;
+}
+
 button {
   padding: 10px 20px;
   border: none;
@@ -145,8 +161,7 @@ button {
   color: white;
   background-color: #171717;
   border-radius: 10px;
-  border: 2px solid #9dffad;
-  cursor: pointer;
+  border: 2px solid rgb(25, 247, 25);
 }
 
 #histories {
