@@ -41,6 +41,8 @@ a:hover {
       rgba(255, 255, 255, 0.05) 99.85%);
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
+
+  text-align: center;
 }
 
 #display {
@@ -48,7 +50,8 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   color: white;
   font-size: 32px;
   background-color: #171717;
@@ -56,6 +59,8 @@ a:hover {
   border-radius: 15px;
   cursor: pointer;
   text-align: center;
+  justify-content: center;
+  overflow: auto;
 }
 
 #countdown {

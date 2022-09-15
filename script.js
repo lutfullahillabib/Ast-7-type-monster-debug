@@ -105,7 +105,7 @@ const closeModal = () => {
   modalBackground.classList.toggle("hidden");
   resultModal.classList.toggle("hidden");
 
-
+  // reload
   window.location.reload();
 
 };
