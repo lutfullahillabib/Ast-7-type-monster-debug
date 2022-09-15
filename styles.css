@@ -43,6 +43,7 @@ a:hover {
   margin-bottom: 30px;
 
   text-align: center;
+  padding: 15px;
 }
 
 #display {
@@ -214,6 +215,8 @@ button {
   top: 0;
 }
 
+/* responsive */
+
 @media only screen and (max-width: 768px) {
   .box-container {
     padding: 0 20px;
@@ -229,4 +232,12 @@ button {
     grid-template-columns: repeat(1, 1fr);
     /* text-align: center; */
   }
+
+  #question {
+    font-size: 17px;
+    padding: 15px;
+    overflow: auto;
+  }
+
+
 }
